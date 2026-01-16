@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutahar Mohammed | Data Analytics Portfolio & Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <span class="logo-text">Mutahar</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-background"></div>
+            <div class="data-visualization">
+                <canvas id="dataCanvas"></canvas>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <div class="hero-badge">
+                    <span class="badge-text">Data Analyst</span>
+                </div>
+                <h1 class="hero-title">
+                    Transforming <span class="highlight">Data</span> into
+                    <span class="highlight">Insights</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Master's in Applied Mathematics | Expert in Statistical Analysis & Machine Learning
+                </p>
+                <div class="hero-description">
+                    <p>Hi, I'm <strong>Mutahar Mohammed</strong>, a passionate data analyst with expertise in statistical modeling, data visualization, and machine learning. I turn complex datasets into actionable business intelligence.</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Data Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate__animated animate__fadeIn">
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <!-- Placeholder for profile image -->
+                            <div class="avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Mutahar Mohammed</h3>
+                            <p>Data Analyst & ML Specialist</p>
+                            <div class="profile-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Russia | Remote/Relocation</span>
+                            </div>
+                        </div>
+                        <div class="profile-tech">
+                            <div class="tech-tag">Python</div>
+                            <div class="tech-tag">SQL</div>
+                            <div class="tech-tag">Power BI</div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mohammedmutaher3@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 912 271-44-16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="section-header">
+            <span class="section-subtitle">Technical Expertise</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-description">Mastering the tools that transform raw data into strategic insights</p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Data Analysis -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & SQL -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database & SQL</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Query Optimization</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Modeling</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Visualization</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib/Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Storytelling</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Advanced Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Russian (C1)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">English (Fluent)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section-header">
+            <span class="section-subtitle">Portfolio Showcase</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">Real-world applications of data analysis and machine learning</p>
+        </div>
+        <div class="projects-container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">01</span>
+                        <div class="project-category">Data Analysis</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Statistical Analysis with Python</h3>
+                        <p class="project-description">
+                            Comprehensive data cleaning, preprocessing, and statistical analysis of large datasets using Pandas, NumPy, Matplotlib, and Seaborn to identify key trends and patterns.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">02</span>
+                        <div class="project-category">Database</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Database Design & SQL Optimization</h3>
+                        <p class="project-description">
+                            Designed relational databases and wrote complex SQL queries for data extraction, aggregation, and analysis. Optimized queries for improved performance and scalability.
+                        </p>
+                        <div class="project-tech">
+                            <span>PostgreSQL</span>
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                            <span>Database Design</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">03</span>
+                        <div class="project-category">Business Intelligence</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Power BI Dashboard Development</h3>
+                        <p class="project-description">
+                            Developed interactive Power BI dashboards for visualizing key performance indicators (KPIs) and providing actionable insights for business decision-making.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Data Visualization</span>
+                            <span>Business Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog" id="blog">
+        <div class="section-header">
+            <span class="section-subtitle">Latest Articles</span>
+            <h2 class="section-title">Data Analytics Blog</h2>
+            <p class="section-description">Insights, tutorials, and thoughts on data science and analytics</p>
+        </div>
+        <div class="blog-container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="blog-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Tutorial</div>
+                        <h3 class="blog-title">Mastering Data Cleaning with Python</h3>
+                        <p class="blog-excerpt">
+                            A comprehensive guide to data cleaning techniques using Pandas and NumPy. Learn how to handle missing values, outliers, and inconsistent data formats.
+                        </p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                            <span><i class="fas fa-tags"></i> Python, Pandas, Data Cleaning</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="blog-date">
+                            <span class="date-day">10</span>
+                            <span class="date-month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Case Study</div>
+                        <h3 class="blog-title">SQL Query Optimization Best Practices</h3>
+                        <p class="blog-excerpt">
+                            Real-world examples of SQL query optimization techniques that improved database performance by 300% in production environments.
+                        </p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                            <span><i class="fas fa-tags"></i> SQL, Optimization, PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="blog-date">
+                            <span class="date-day">05</span>
+                            <span class="date-month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Tutorial</div>
+                        <h3 class="blog-title">Creating Interactive Dashboards with Power BI</h3>
+                        <p class="blog-excerpt">
+                            Step-by-step tutorial on building enterprise-level dashboards with Power BI, including data modeling, DAX formulas, and advanced visualization techniques.
+                        </p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 12 min read</span>
+                            <span><i class="fas fa-tags"></i> Power BI, Visualization, Dashboard</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-book"></i> View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="about">
+        <div class="section-header">
+            <span class="section-subtitle">Academic Background</span>
+            <h2 class="section-title">Education & Certifications</h2>
+            <p class="section-description">Continuous learning in data science and analytics</p>
+        </div>
+        <div class="education-container">
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2023-2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Master of Applied Informatics</h3>
+                        <p class="institution">Ural Federal University (UrFU), Russia</p>
+                        <div class="course-list">
+                            <span>Probability Theory</span>
+                            <span>Mathematical Statistics</span>
+                            <span>Machine Learning</span>
+                            <span>Optimization Methods</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Advanced Data Science Certification</h3>
+                        <p class="institution">Project Learning Certificate</p>
+                        <div class="course-list">
+                            <span>Statistical Analysis</span>
+                            <span>Data Mining</span>
+                            <span>Predictive Modeling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-sidebar">
+                <div class="sidebar-card">
+                    <h3>Core Competencies</h3>
+                    <ul class="competency-list">
+                        <li><i class="fas fa-check-circle"></i> Statistical Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Machine Learning</li>
+                        <li><i class="fas fa-check-circle"></i> Data Visualization</li>
+                        <li><i class="fas fa-check-circle"></i> Database Management</li>
+                        <li><i class="fas fa-check-circle"></i> Business Intelligence</li>
+                        <li><i class="fas fa-check-circle"></i> Data Storytelling</li>
+                    </ul>
+                </div>
+                <div class="sidebar-card">
+                    <h3>Languages</h3>
+                    <div class="language-item">
+                        <span>Russian</span>
+                        <div class="language-level">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot"></span>
+                        </div>
+                        <span class="level-text">C1 (Advanced)</span>
+                    </div>
+                    <div class="language-item">
+                        <span>English</span>
+                        <div class="language-level">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot"></span>
+                        </div>
+                        <span class="level-text">Fluent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">Ready to transform your data into insights? Contact me for opportunities.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>mohammedmutaher3@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+7 912 271-44-16</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Russia | Open to Relocation/Remote Work</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <span class="logo-text">Mutahar Mohammed</span>
+                </div>
+                <p class="footer-tagline">Transforming data into actionable insights through innovation.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-cta">
+                <h3>Let's Connect</h3>
+                <p>Interested in collaborating or have a data challenge?</p>
+                <a href="mailto:mohammedmutaher3@gmail.com" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mutahar Mohammed. All rights reserved.</p>
+            <p>Data Analyst Portfolio & Blog</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
