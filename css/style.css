@@ -853,3 +853,21 @@ button {
         width: 100%;
     }
 }
+
+/* Keyboard focus styles for accessibility */
+.user-is-tabbing .nav-link:focus,
+.user-is-tabbing .button:focus,
+.user-is-tabbing a:focus,
+.user-is-tabbing input:focus,
+.user-is-tabbing textarea:focus {
+    outline: 3px solid rgba(14,165,233,0.18);
+    outline-offset: 3px;
+    box-shadow: 0 8px 30px rgba(14,165,233,0.06);
+}
+
+/* Responsive project grid using flexible columns */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
