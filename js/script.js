@@ -2,12 +2,15 @@ const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 const navItems = document.querySelectorAll('.nav-link');
 
-menuToggle.addEventListener('click', () => {
-    const expanded = navLinks.classList.toggle('active');
-    menuToggle.setAttribute('aria-expanded', expanded.toString());
-});
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        const expanded = navLinks.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', expanded.toString());
+    });
+}
 
 window.addEventListener('click', (event) => {
+    if (!menuToggle || !navLinks) return;
     if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
         if (navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
@@ -18,6 +21,7 @@ window.addEventListener('click', (event) => {
 
 // Close menu with Escape and support keyboard navigation
 document.addEventListener('keydown', (e) => {
+    if (!menuToggle || !navLinks) return;
     if (e.key === 'Escape') {
         if (navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
@@ -34,8 +38,10 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
         const target = document.querySelector(targetId);
         if (!target) return;
         event.preventDefault();
-        navLinks.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
+        if (menuToggle && navLinks) {
+            navLinks.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
         window.scrollTo({ top: target.offsetTop - 84, behavior: 'smooth' });
     });
 });

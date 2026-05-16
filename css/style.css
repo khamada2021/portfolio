@@ -375,7 +375,6 @@ button {
     display: none;
     width: 100%;
     height: 100%;
-    display: grid;
     place-items: center;
     color: white;
     font-size: 2rem;
