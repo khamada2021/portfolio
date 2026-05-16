@@ -1,19 +1,19 @@
 :root {
-    --bg: #f8fbff;
+    --bg: #f7fafc;
     --surface: #ffffff;
-    --surface-alt: #f1f6ff;
-    --muted-surface: #eef4ff;
-    --text: #0f1724;
-    --muted: #556076;
-    --accent: #0ea5e9;
-    --accent-soft: #7dd3fc;
-    --accent-2: #2563eb;
-    --accent-warm: #ff6b6b;
-    --border: rgba(15, 23, 42, 0.08);
-    --radius: 18px;
-    --radius-sm: 12px;
-    --elevation: 0 14px 48px rgba(15, 23, 42, 0.08);
-    --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    --surface-alt: #eef6f7;
+    --muted-surface: #edf2f7;
+    --text: #111827;
+    --muted: #4b5563;
+    --accent: #0284c7;
+    --accent-soft: #14b8a6;
+    --accent-2: #1d4ed8;
+    --accent-warm: #f97316;
+    --border: rgba(17, 24, 39, 0.1);
+    --radius: 8px;
+    --radius-sm: 6px;
+    --elevation: 0 12px 32px rgba(17, 24, 39, 0.08);
+    --shadow: 0 16px 38px rgba(17, 24, 39, 0.08);
     --transition: 0.22s ease;
     --font-body: 'Inter', sans-serif;
     --font-heading: 'Space Grotesk', sans-serif;
@@ -32,7 +32,7 @@ body {
     min-height: 100vh;
     font-family: var(--font-body);
     color: var(--text);
-    background: linear-gradient(180deg, var(--bg), #f1f5f9);
+    background: linear-gradient(180deg, var(--bg), #eef2f7);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -110,7 +110,7 @@ button {
     align-items: center;
     gap: 0.85rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
 }
 
 .brand-mark {
@@ -118,8 +118,8 @@ button {
     height: 44px;
     display: grid;
     place-items: center;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-soft));
     color: white;
     font-weight: 700;
 }
@@ -136,7 +136,7 @@ button {
 
 .nav-link {
     padding: 0.55rem 0.85rem;
-    border-radius: 10px;
+    border-radius: var(--radius);
     font-size: 0.95rem;
     color: var(--muted);
     transition: background var(--transition), color var(--transition), transform var(--transition);
@@ -154,7 +154,7 @@ button {
     display: none;
     width: 46px;
     height: 46px;
-    border-radius: 16px;
+    border-radius: var(--radius);
     border: 1px solid rgba(15, 23, 42, 0.08);
     background: white;
     color: var(--text);
@@ -173,7 +173,7 @@ button {
         width: min(320px, calc(100% - 2rem));
         flex-direction: column;
         padding: 1rem;
-        border-radius: 22px;
+        border-radius: var(--radius);
         background: rgba(255, 255, 255, 0.98);
         border: 1px solid rgba(15, 23, 42, 0.08);
         box-shadow: var(--elevation);
@@ -197,8 +197,8 @@ button {
 
 .hero {
     padding: 5rem 0 3rem;
-    background: radial-gradient(circle at top left, rgba(14, 165, 233, 0.16), transparent 24%),
-                linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+    background: radial-gradient(circle at top left, rgba(20, 184, 166, 0.14), transparent 24%),
+                linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
 }
 
 .hero-grid {
@@ -215,11 +215,11 @@ button {
     gap: 0.5rem;
     padding: 0.75rem 1.1rem;
     border-radius: 999px;
-    background: rgba(51, 102, 255, 0.12);
+    background: rgba(20, 184, 166, 0.12);
     color: var(--accent);
     font-size: 0.82rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -229,7 +229,7 @@ button {
     font-size: clamp(2.2rem, 4vw, 3.6rem);
     line-height: 1.05;
     margin: 0.6rem 0 1rem;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
 }
 
 .hero-copy p,
@@ -256,7 +256,7 @@ button {
     gap: 0.65rem;
     padding: 0.95rem 1.5rem;
     min-width: 170px;
-    border-radius: 14px;
+    border-radius: var(--radius);
     font-weight: 700;
     border: 1px solid transparent;
     transition: transform var(--transition), background var(--transition), box-shadow var(--transition), border-color var(--transition);
@@ -276,26 +276,26 @@ button {
 }
 
 .button-primary {
-    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-soft));
     color: white;
 }
 
 .button-secondary {
     background: transparent;
     color: var(--text);
-    border-color: rgba(51, 102, 255, 0.14);
+    border-color: rgba(29, 78, 216, 0.18);
 }
 
 .button-outline,
 .button-tertiary {
     background: transparent;
     color: var(--accent);
-    border-color: rgba(51, 102, 255, 0.16);
+    border-color: rgba(2, 132, 199, 0.18);
 }
 
 .button-outline:hover,
 .button-tertiary:hover {
-    background: rgba(51, 102, 255, 0.1);
+    background: rgba(20, 184, 166, 0.1);
 }
 
 .hero-cards {
@@ -305,7 +305,7 @@ button {
 }
 
 .hero-card {
-    border-radius: 12px;
+    border-radius: var(--radius);
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: var(--elevation);
@@ -327,8 +327,8 @@ button {
 
 .hero-profile-card {
     padding: 1.5rem;
-    border-radius: 24px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.98), #f7fbff);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), #f7fafc);
     box-shadow: var(--shadow);
     border: 1px solid rgba(15, 23, 42, 0.08);
     overflow: hidden;
@@ -339,8 +339,8 @@ button {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.15), transparent 28%),
-                radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.12), transparent 22%);
+    background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.14), transparent 28%),
+                radial-gradient(circle at bottom left, rgba(249, 115, 22, 0.1), transparent 22%);
     pointer-events: none;
     z-index: 0;
 }
@@ -353,12 +353,12 @@ button {
 .profile-photo {
     position: relative;
     width: 100%;
-    border-radius: 20px;
+    border-radius: var(--radius);
     overflow: hidden;
     margin-bottom: 1rem;
     min-height: 240px;
     aspect-ratio: 4 / 5;
-    background: linear-gradient(180deg, rgba(14,165,233,0.08), rgba(37,99,235,0.04));
+    background: linear-gradient(180deg, rgba(20,184,166,0.08), rgba(29,78,216,0.04));
     display: grid;
     place-items: center;
 }
@@ -379,7 +379,7 @@ button {
     color: white;
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-soft));
 }
 
 .profile-photo.no-image .photo-fallback {
@@ -400,10 +400,10 @@ button {
 .avatar {
     width: 86px;
     height: 86px;
-    border-radius: 24px;
+    border-radius: var(--radius);
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, var(--accent), var(--accent-warm));
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-warm));
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
@@ -435,7 +435,7 @@ button {
 .profile-info span {
     padding: 0.5rem 0.8rem;
     border-radius: 999px;
-    background: rgba(14,165,233,0.06);
+    background: rgba(20,184,166,0.1);
     color: var(--accent-2);
     font-size: 0.9rem;
     font-weight: 600;
@@ -448,7 +448,7 @@ button {
 
 .contact-summary div {
     padding: 1rem 1.25rem;
-    border-radius: 22px;
+    border-radius: var(--radius);
     background: var(--surface-alt);
     border: 1px solid rgba(15, 23, 42, 0.06);
 }
@@ -471,7 +471,7 @@ button {
 }
 
 .section:nth-of-type(even) {
-    background: rgba(14, 165, 233, 0.04);
+    background: rgba(20, 184, 166, 0.05);
 }
 
 .section-grid,
@@ -488,9 +488,19 @@ button {
 }
 
 .section-header h2 {
+    font-family: var(--font-heading);
     font-size: clamp(2.2rem, 4vw, 3.2rem);
     margin: 0.8rem 0 1rem;
     line-height: 1.05;
+    letter-spacing: 0;
+}
+
+.contact-details h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.08;
+    margin: 0;
+    letter-spacing: 0;
 }
 
 .about-items {
@@ -500,7 +510,7 @@ button {
 
 .about-items article {
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: var(--radius);
     background: white;
     border: 1px solid rgba(15, 23, 42, 0.08);
     box-shadow: var(--shadow);
@@ -513,8 +523,8 @@ button {
 
 .highlight-card {
     padding: 1.75rem;
-    border-radius: 26px;
-    background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
     border: 1px solid rgba(15, 23, 42, 0.06);
     box-shadow: var(--shadow);
 }
@@ -541,7 +551,7 @@ button {
 
 .skill-card {
     padding: 1.25rem;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
@@ -567,7 +577,7 @@ button {
 .skill-bar span {
     display: block;
     height: 100%;
-    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-soft));
     border-radius: 999px;
 }
 
@@ -580,7 +590,7 @@ button {
 .blog-card,
 .contact-form {
     padding: 1.25rem;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: 0 12px 40px rgba(15, 23, 42, 0.04);
@@ -592,10 +602,42 @@ button {
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
+.project-media {
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--muted-surface);
+    border: 1px solid var(--border);
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform var(--transition);
+}
+
+.project-card:hover .project-media img {
+    transform: scale(1.035);
+}
+
+.project-media-placeholder {
+    display: grid;
+    place-items: center;
+    color: white;
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-soft) 58%, var(--accent-warm));
+}
+
+.project-media-placeholder i {
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    opacity: 0.92;
+}
+
 .project-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow);
-    border-color: rgba(37, 99, 235, 0.14);
+    border-color: rgba(20, 184, 166, 0.28);
 }
 
 .project-meta {
@@ -632,7 +674,7 @@ button {
     padding: 0.65rem 0.95rem;
     border-radius: 999px;
     font-size: 0.85rem;
-    background: rgba(51, 102, 255, 0.08);
+    background: rgba(20, 184, 166, 0.1);
     color: var(--accent);
 }
 
@@ -655,7 +697,7 @@ button {
 .blog-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow);
-    border-color: rgba(37, 99, 235, 0.12);
+    border-color: rgba(20, 184, 166, 0.24);
 }
 
 .blog-top {
@@ -681,7 +723,7 @@ button {
     display: grid;
     gap: 0.65rem;
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: var(--radius);
     background: white;
     border: 1px solid rgba(15, 23, 42, 0.06);
     box-shadow: var(--shadow);
@@ -706,7 +748,7 @@ button {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.95rem 1rem;
-    border-radius: 18px;
+    border-radius: var(--radius);
     background: var(--surface-alt);
     color: var(--text);
 }
@@ -722,7 +764,7 @@ button {
 
 .contact-block {
     padding: 1.5rem 1.4rem;
-    border-radius: 24px;
+    border-radius: var(--radius);
     background: white;
     border: 1px solid rgba(15, 23, 42, 0.06);
     box-shadow: var(--shadow);
@@ -761,7 +803,7 @@ button {
     width: 100%;
     padding: 1rem 1.1rem;
     border: 1px solid rgba(15, 23, 42, 0.12);
-    border-radius: 18px;
+    border-radius: var(--radius);
     background: #ffffff;
     color: var(--text);
     transition: border-color var(--transition), box-shadow var(--transition);
@@ -771,12 +813,12 @@ button {
 .field-group textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 4px rgba(51, 102, 255, 0.1);
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.14);
 }
 
 .footer {
     padding: 3rem 0 2rem;
-    background: #f8fbff;
+    background: #f7fafc;
     border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
 
@@ -814,14 +856,14 @@ button {
     height: 44px;
     display: grid;
     place-items: center;
-    border-radius: 16px;
+    border-radius: var(--radius);
     border: 1px solid rgba(15, 23, 42, 0.08);
     color: var(--text);
     transition: background var(--transition), color var(--transition);
 }
 
 .social-links a:hover {
-    background: rgba(51, 102, 255, 0.12);
+    background: rgba(20, 184, 166, 0.12);
     color: var(--accent);
 }
 
@@ -837,7 +879,7 @@ button {
     right: 1.5rem;
     bottom: 1.5rem;
     padding: 1rem 1.2rem;
-    border-radius: 18px;
+    border-radius: var(--radius);
     color: white;
     font-weight: 600;
     box-shadow: 0 24px 60px rgba(15, 23, 62, 0.18);
@@ -887,7 +929,7 @@ button {
         flex-direction: column;
         width: calc(100% - 2rem);
         background: white;
-        border-radius: 24px;
+        border-radius: var(--radius);
         border: 1px solid rgba(15, 23, 42, 0.08);
         box-shadow: var(--shadow);
         padding: 1rem;
@@ -914,7 +956,7 @@ button {
 @media (max-width: 520px) {
     .hero-copy h1,
     .section-copy h2 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .button {
@@ -928,9 +970,9 @@ button {
 .user-is-tabbing a:focus,
 .user-is-tabbing input:focus,
 .user-is-tabbing textarea:focus {
-    outline: 3px solid rgba(14,165,233,0.18);
+    outline: 3px solid rgba(20,184,166,0.2);
     outline-offset: 3px;
-    box-shadow: 0 8px 30px rgba(14,165,233,0.06);
+    box-shadow: 0 8px 30px rgba(20,184,166,0.08);
 }
 
 /* Responsive project grid using flexible columns */
